@@ -26,6 +26,10 @@ class Student
     DB[:conn].execute(sql) 
   end
 
+  # task :greeting do 
+  #   print "hello from Rake!"
+  # end
+
   def self.drop_table
     sql = "DROP TABLE IF EXISTS students"
     DB[:conn].execute(sql) 
